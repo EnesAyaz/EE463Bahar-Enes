@@ -1,0 +1,15 @@
+Simulink is useful for making dynamic system simulation.It computes successive states at time steps. The methods are included in 'solver'. 
+Our solver has fixed-step that means that time step is constant from beginning to end of simulation.
+
+The step size, sampling interval, depends on 'time constant' of circuit.There is basic rule that sampling time is 1/10 times time constant.
+
+We observe that 1.5 msec time step is not realistic. However, 10usec and 1usec is appliable for the circuit.
+
+Snubber Circuit using for diodes.
+
+
+
+
+https://www.researchgate.net/post/What_is_the_relation_of_sampling_interval_with_time_constant_of_a_system
+
+https://www.illinoiscapacitor.com/pdf/papers/rc_snubber.pdf
