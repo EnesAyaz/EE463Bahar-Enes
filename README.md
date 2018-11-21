@@ -10,3 +10,10 @@ Done
 To do
 * Work Distribution
 * Determining Matlab version
+
+Not to do
+Öncelikle dosyasınızı başka bir konumda düzenleyin. Pull yapın sonra düzenlediğiniz dosyayı EngineeringDesign klasörüne atıp push yapın.
+Not push before pull! (alan el veren elden üstündür.)
+Never ever try to open another branch
+No fetch, merge, weird forks and anything fancy
+If your push give error do NOT force-push. There is no force-pull option at the another side.
