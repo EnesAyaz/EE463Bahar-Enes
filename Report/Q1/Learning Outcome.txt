@@ -1,9 +1,16 @@
-Simulink is useful for making dynamic system simulation.It computes successive states at time steps. The methods are included in 'solver'. 
-Our solver has fixed-step that means that time step is constant from beginning to end of simulation.
+Simulink is an quite useful digital simulation environment for making simulations of dynamic systems. It computes successive states at time steps. The methods are included in 'solver'. 
+Our solver is discrete and has fixed-step which means that time step is constant from beginning to end of simulation.
 
-The step size, sampling interval, depends on 'time constant' of circuit.There is basic rule that sampling time is 1/10 times time constant.
+The step size, the sampling interval, depends on the 'time constant' of circuit. There is a basic rule that the sampling time should be the 1/10 times of the time constant.
 
-We observe that 1.5 msec time step is not realistic. However, 10usec and 1usec is appliable for the circuit.
+We used powergui block to make the arrangements for the simulation. We have chosen discrete as the simulation type and simulate the circuit for different values of sample time.
+
+
+We observe that 1.5 msec time step was not realistic. It resulted in disturbances in the load voltage.
+However, 10usec and 1usec was appliable for the circuit since they give more smooth and expected output waveforms relative to the 
+1.5 msec case.
+This is because, when our sampling time is not small enough, some of the time steps are lost. Hence, we have some information lost at the
+resultant output voltage waveform.
 
 Snubber Circuit using for diodes.
 
@@ -13,3 +20,5 @@ Snubber Circuit using for diodes.
 https://www.researchgate.net/post/What_is_the_relation_of_sampling_interval_with_time_constant_of_a_system
 
 https://www.illinoiscapacitor.com/pdf/papers/rc_snubber.pdf
+
+https://edoras.sdsu.edu/doc/matlab/toolbox/simulink/ug/how_simulink_works18.html
