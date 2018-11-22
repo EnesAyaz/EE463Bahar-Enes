@@ -1,0 +1,6 @@
+Load inductor is filter to load current as minimizing sharpness. If inductivity increases, observe DC current at load. 
+At full bridge rectifier, if load current is like constant value, line current is observed like square wave.
+All of them shows us that indcutive load behaves like constant current source at steady state. 
+
+Note: There is no effect on 'commutation'. 
+Commutation depends on source side inductance, not load side.
